@@ -1,11 +1,20 @@
-<%= @question %>
+<div class="container justify-content-center">
+<div class="row col-12">
+<form action="answer" class="my-4 w-90">
+  <div class="input-group">
+    <input type="text" class="form-control" name="question" placeholder="Ask a question...">
+    <button type="submit" class="btn btn-primary">Ask!</button>
+  </div>
+</form>
 
-<h1> your question </h1>
-<h2> the coach's answer </h2>
-<p>
-<%= @answer %>
-</p>
+
+
+
+<h2> the coach's answer: <h6><%= @answer %> </h6></h2>
+
 
 <p>
 <%= link_to 'back', ask_path %>
 </p>
+</div>
+</div>
